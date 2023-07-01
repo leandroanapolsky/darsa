@@ -1,0 +1,156 @@
+:root {
+  --back: #acc3e6;
+  --main: #05164b;
+  --second: #4d7cc2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* components */
+
+.button {
+  background-color: var(--second);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 60px;
+}
+
+/* banner */
+
+.banner {
+  width: 100%;
+  height: 500px;
+  padding: 2em;
+  color: white;
+  margin-top: 50px;
+  background-image: url("./img/manos.jpg");
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner h1 {
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* about */
+.about-us {
+  display: flex;
+  padding: 2em;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.about-us img {
+  width: 40%;
+  height: auto;
+}
+.about-us .content {
+  margin: 0 auto;
+  width: 60%;
+  padding-left: 4em;
+  align-self: center;
+}
+
+/* services */
+
+.services {
+  padding: 2em;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service img {
+  width: 150px;
+  
+}
+
+.service {
+  text-align: center;
+  margin: 10px 20px;
+  height: 200px;
+  
+}
+
+.service a {
+  text-decoration: none;
+  
+  color: var(--second);
+}
+
+.service h6 {
+  margin-top: 1em;
+}
+
+/* form */
+
+.form {
+  background-color: var(--back);
+  padding: 2em;
+}
+
+/* .form-container {
+  background-color: var(--back);
+  width: 100%;
+  padding: 2em;
+} */
+
+.scroll-parent {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: primary 3s linear infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@keyframes primary {
+  from {
+    right: -100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.primary {
+  animation: primary 25s linear infinite;
+}
+
+.secondary {
+  animation: secondary 25s linear infinite;
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
