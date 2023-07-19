@@ -1,11 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --back: #acc3e6;
   --main: #05164b;
   --second: #4d7cc2;
+  --head: "Montserrat", sans-serif;
+  --body: "Hind", sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  font-family: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--head);
 }
 
 /* components */
@@ -17,6 +30,36 @@
   padding: 5px 20px;
   border: none;
   border-radius: 60px;
+  font-family: var(--head);
+}
+
+/* navbar */
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--main);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding:0 1em;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  
+  color: var(--main);
+  background-color: var(--back);
+  font-weight: 700;
+  border-radius: 15px;
 }
 
 /* banner */
@@ -25,9 +68,8 @@
   width: 100%;
   height: 500px;
   padding: 2em;
-  color: white;
   margin-top: 50px;
-  background-image: url("./img/manos.jpg");
+  background-image: url("./img/banner.jpg");
   background-size: cover;
   background-position: 50%;
   display: flex;
@@ -36,24 +78,28 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  text-shadow: 0px 0px 5px var(--main);
 }
 
 .banner h1 {
   font-size: 3em;
   font-weight: 800;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 /* about */
 .about-us {
   display: flex;
-  padding: 2em;
-  flex-wrap: nowrap;
+  padding: 6em 2em;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .about-us img {
   width: 40%;
+  min-width: 300px;
   height: auto;
 }
 .about-us .content {
@@ -61,12 +107,25 @@
   width: 60%;
   padding-left: 4em;
   align-self: center;
+  color: var(--main);
+}
+
+.about-us .content h2 {
+  font-weight: 600;
 }
 
 /* services */
 
 .services {
-  padding: 2em;
+  padding: 6em 2em;
+  /* padding-bottom: 50px; */
+  background-color: var(--back);
+  
+}
+
+.services h2 {
+  font-weight: 600;
+  color: var(--main);
 }
 
 .services-container {
@@ -77,43 +136,28 @@
 
 .service img {
   width: 150px;
-  
 }
+
 
 .service {
   text-align: center;
   margin: 10px 20px;
   height: 200px;
-  
 }
 
 .service a {
   text-decoration: none;
-  
-  color: var(--second);
+  color: var(--main);
 }
 
 .service h6 {
   margin-top: 1em;
 }
 
-/* form */
-
-.form {
-  background-color: var(--back);
-  padding: 2em;
-}
-
-/* .form-container {
-  background-color: var(--back);
-  width: 100%;
-  padding: 2em;
-} */
-
 .scroll-parent {
   position: relative;
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   overflow-x: hidden;
 }
 
@@ -153,4 +197,112 @@
   to {
     left: 0%;
   }
+}
+
+/* Clients */
+
+.clients {
+  padding: 6em 2em;
+}
+
+.clients h2 {
+  font-weight: 600;
+  color: var(--main);
+}
+
+.clients-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15em;
+  color: var(--second);
+  text-align: center;
+  font-style: italic;
+}
+
+.client h5 {
+  padding-top: 1em;
+  font-style: normal;
+  color: var(--main);
+  
+}
+
+.client img {
+  width: 8em;
+  height: 8em;
+  border-radius: 4em;
+}
+
+/* form */
+
+.contact {
+  background-color: var(--back);
+  padding: 2em;
+  color: var(--main);
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main);
+  padding: 20px 30px;
+  color: var(--back);
+  border-radius: 10px;
+  width: 40%;
+  min-width: 325px;
+}
+
+.form .text {
+  width: 100%;
+  height: auto;
+}
+
+.form input {
+  margin-bottom: 20px;
+}
+
+.form .button {
+  width: 100px;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.form-second {
+  padding-left: 10%;
+}
+
+.form-second p span {
+  font-weight: bold;
+}
+
+/* footer */
+
+.footer{
+  background-color: var(--main);
+  color: #ffffff;
+  display: flex;
+  padding: 2em;
+  justify-content: space-between;
+}
+
+/* sign */
+.sign{
+  background-color: var(--main);
+  color: #ffffff;
+  font-size: smaller;
+  padding: 0 2em;
+  font-style: italic;
 }
