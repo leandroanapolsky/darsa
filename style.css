@@ -84,6 +84,11 @@ nav a:hover {
   text-shadow: 0px 0px 5px var(--main);
 }
 
+.banner img {
+  -webkit-filter: drop-shadow(0px 0px 5px var(--main));
+    filter:         drop-shadow(0px 0px 5px var(--main)); 
+}
+
 .banner h1 {
   font-size: 3em;
   font-weight: 800;
@@ -248,9 +253,14 @@ nav a:hover {
   color: var(--main);
 }
 
+.contact h2 {
+  font-weight: 600;
+  color: var(--main);
+}
+
 .form-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   /* justify-content: space-between; */
 }
 
@@ -266,8 +276,11 @@ nav a:hover {
 }
 
 .form .text {
+  box-sizing: border-box;
   width: 100%;
-  height: auto;
+  height: 150px;
+  resize: none;
+  
 }
 
 .form input {
@@ -282,20 +295,11 @@ nav a:hover {
 
 .form-second {
   padding-left: 10%;
+  width: 60%;
 }
 
 .form-second p span {
   font-weight: bold;
-}
-
-/* footer */
-
-.footer {
-  background-color: var(--main);
-  color: #ffffff;
-  display: flex;
-  padding: 2em;
-  justify-content: space-between;
 }
 
 /* sign */
@@ -305,4 +309,130 @@ nav a:hover {
   font-size: smaller;
   padding: 0 2em;
   font-style: italic;
+}
+
+
+
+/* serv-about */
+
+
+
+.serv-about{
+  margin-top: 73px;
+  padding: 2em;
+  display: flex;
+color: var(--main);
+background-color: var(--back);
+}
+
+.serv-about h2{
+  font-weight: 600;
+}
+
+.serv-about-r {
+  padding-left: 2em;
+}
+
+.serv-about img{
+  width: 300px;
+}
+
+/* serv-serv */
+
+.serv-services {
+  padding: 2em;
+  color: var(--main);
+}
+
+.serv-services h2 {
+  font-weight: 600;
+  margin: 2em 0;
+}
+
+.srv-l {
+  display: flex;
+  align-items: center;
+}
+
+.srv-l img{
+  width: 150px;
+}
+
+.srv-r {
+  display: flex;
+  align-items: center;
+  
+}
+
+.srv-r img{
+  width: 150px;
+}
+
+.srv-txt {
+  padding: 0 2em;
+}
+
+
+/* media querys */
+
+@media only screen and (max-width: 813px){
+
+  /* about */
+    .about-us {
+  display: flex;
+  /* padding: 6em 2em; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-us img {
+  width: 55%;
+  min-width: 300px;
+  
+}
+.about-us .content {
+  padding: 1em 0;
+  width: 55%;
+  min-width: 300px;
+  
+   
+}
+
+
+
+/* contact */
+
+
+
+.contact h2 {
+  font-weight: 600;
+  color: var(--main);
+  /* padding-left: 22.5%; */
+  text-align: center;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.form {
+  width: 55%;
+  min-width: 300px;
+}
+
+
+.form-second {
+  padding: 2em 0;
+  width: 55%;
+  min-width: 300px;
+}
+
 }
