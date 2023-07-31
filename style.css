@@ -62,7 +62,7 @@ nav a:hover {
   color: var(--main);
   background-color: var(--back);
   font-weight: 700;
-  border-radius: 15px;
+  
 }
 
 /* banner */
