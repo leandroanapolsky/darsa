@@ -87,6 +87,7 @@ nav a:hover {
 .banner img {
   -webkit-filter: drop-shadow(0px 0px 5px var(--main));
     filter:         drop-shadow(0px 0px 5px var(--main)); 
+    width: 50%;
 }
 
 .banner h1 {
@@ -125,7 +126,7 @@ nav a:hover {
 /* services */
 
 .services {
-  padding: 6em 2em;
+  padding: 6em 0;
   /* padding-bottom: 50px; */
   background-color: var(--back);
 }
@@ -434,5 +435,159 @@ background-color: var(--back);
   width: 55%;
   min-width: 300px;
 }
+
+
+
+}
+
+@media only screen and (max-width: 600px){
+
+/* banner */
+
+.banner {
+  font-size: 0.5em;
+}
+
+/* about */
+.about-us {
+  display: flex;
+  padding: 6em 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.about-us img {
+  width: 60%;
+  min-width: 250px;
+  height: auto;
+}
+.about-us .content {
+  margin: 0 auto;
+  width: 60%;
+  min-width: 250px;
+  align-self: center;
+  color: var(--main);
+}
+
+
+/* service */
+
+
+.services {
+  padding-bottom: 0;
+}
+
+
+.service img {
+  width: 50px;
+}
+
+/* contact */
+
+
+
+.contact h2 {
+  font-weight: 600;
+  color: var(--main);
+  /* padding-left: 22.5%; */
+  text-align: center;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.form {
+  width: 70%;
+  min-width: 250px;
+}
+
+
+.form-second {
+  padding: 2em 0;
+  width: 70%;
+  min-width: 250px;
+}
+
+
+
+/* serv-about */
+
+
+.serv-about{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+align-items: center;}
+
+.serv-about h2{
+  
+}
+
+.serv-about-r {
+ width: 70%;
+  min-width: 250px;
+ padding: 0.5em 0;
+}
+
+.serv-about img{
+  width: 70%;
+  min-width: 250px;
+}
+
+/* serv-serv */
+
+.serv-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  color: var(--main);
+}
+
+.serv-services h2 {
+  font-weight: 600;
+  
+}
+
+.srv-l {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+margin-bottom: 2em;
+}
+
+.srv-l img{
+  width: 100px;
+  margin-bottom: 1em;
+}
+
+.srv-r {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+margin-bottom: 2em;
+  
+}
+
+.srv-r img{
+  margin-bottom: 1em;
+  width: 100px;
+}
+
+.srv-txt {
+  padding: 0 0.5em;
+}
+
 
 }
