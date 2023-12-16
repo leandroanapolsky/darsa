@@ -36,9 +36,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#aboutUs">Sobre nosotros</a>
-            </li> -->
+            
             <div class="dropdown">
               <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 La Empresa
@@ -46,9 +44,9 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#aboutUs">Sobre nosotros</a></li>
                 
-                <li><a class="dropdown-item" href="#">Términos de uso</a></li>
-                <li><a class="dropdown-item" href="#">Privacidad</a></li>
-                <li><a class="dropdown-item" href="#">Política de devolución</a></li>
+                <li><a class="dropdown-item" href="about.html#terminos">Términos de uso</a></li>
+                <li><a class="dropdown-item" href="about.html#privacidad">Privacidad</a></li>
+                <li><a class="dropdown-item" href="about.html#politica">Política de devolución</a></li>
               </ul>
             </div>
             <li class="nav-item">
@@ -64,14 +62,7 @@
         </div>
       </div>
     </nav>
-    <!-- 
-    <nav>
-      <div>Logo Darsa</div>
-      <div>
-        <a href="">Sobre nosotros</a><a href="">Nuestros Servicios</a
-        ><a href="">Contacto</a>
-      </div>
-    </nav> -->
+    
 
     <!-- banner -->
     <section class="banner">
@@ -79,7 +70,7 @@
 
       <h1>Soluciones para empresas</h1>
 
-      <!-- <button type="submit" class="button">Contacto</button> -->
+      
     </section>
 
     <!-- About Us -->
@@ -93,7 +84,7 @@
           tincidunt turpis id orci ornare, vitae hendrerit augue volutpat. Class
           aptent taciti sociosqu ad litora torquent per conubia nostra, per
         </p>
-        <a href="./services.html"
+        <a href="./about.html"
           ><button type="button" class="button">Saber mas</button></a
         >
       </div>
@@ -102,7 +93,7 @@
     <!-- Services -->
 
     <section class="services" id="service">
-      <!-- <h2>Nuestros servicios</h2> -->
+      
 
       <div class="scroll-parent">
         <div class="scroll-element primary">
@@ -349,16 +340,7 @@
   <img src="./img/br-10.png" alt="Imagen 10">
 </div>
 
-      <!-- <img src="/img/br-01.png" alt="Imagen 1">
-      <img src="/img/br-02.png" alt="Imagen 2">
-      <img src="/img/br-03.png" alt="Imagen 3">
-      <img src="/img/br-04.png" alt="Imagen 4">
-      <img src="/img/br-05.png" alt="Imagen 5">
-      <img src="/img/br-06.png" alt="Imagen 6">
-      <img src="/img/br-07.png" alt="Imagen 7">
-      <img src="/img/br-08.png" alt="Imagen 8">
-      <img src="/img/br-09.png" alt="Imagen 9">
-      <img src="/img/br-10.png" alt="Imagen 10"> -->
+      
 
     </section>
 
@@ -372,17 +354,17 @@
           method="post"
           class="form"
         >
-          <label for="Name">Nombre*</label>
-          <input name="Name" id="name" type="text" />
+          <label for="name">Nombre*</label>
+          <input name="name" id="name" type="text" required/>
 
           <label for="lastName">Apellido</label>
           <input name="Lastname" id="lastname" type="text" />
 
           <label for="Name">Teléfono*</label>
-          <input name="Phone" id="phone" type="text" />
+          <input name="Phone" id="phone" type="text" required/>
 
           <label for="email">Email*</label>
-          <input name="Email" id="email" type="email" />
+          <input name="Email" id="email" type="email" required/>
 
           <label for="Mensaje">Su consulta:</label>
           <textarea
@@ -392,7 +374,7 @@
             rows="10"
             class="text"
           ></textarea>
-          <!-- <input name="Mensaje" id="Mensaje" type="text" class="text" /> -->
+          
 
           <button type="submit" class="button">Enviar</button>
         </form>
