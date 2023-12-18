@@ -97,7 +97,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-shadow: 0px 0px 5px var(--main);
 }
 
@@ -208,8 +208,9 @@ nav a:hover {
 
 .primary {
   animation: primary 25s linear infinite;
+  animation-direction: alternate;
 }
-
+/* 
 .secondary {
   animation: secondary 25s linear infinite;
 }
@@ -221,7 +222,7 @@ nav a:hover {
   to {
     left: 0%;
   }
-}
+} */
 
 /* Clients */
 
@@ -293,11 +294,32 @@ nav a:hover {
 .brand-container img {
  justify-self: center;
  align-self: center;
-  height: 50px;
-  width: auto;
-  margin: 2em 1em ;
+  /* height: 50px;
+  width: auto; */
+  margin: 2em 2em ;
   
 }
+
+#jbl{height: 85px;
+width: auto;}
+#logitech{height: 50px;
+width: auto;}
+#apple{height: 85px;
+width: auto;}
+#chromecast{height: 50px;
+width: auto;}
+#samsung{height: 40px;
+width: auto;}
+#maxell{height: 45px;
+width: auto;}
+#lenovo{height: 45px;
+width: auto;}
+#roku{height: 45px;
+width: auto;}
+#motorola{height: 80px;
+width: auto;}
+#xiaomi{height: 50px;
+width: auto;}
 
 
 /* form */
@@ -579,10 +601,14 @@ background-color: var(--back);
   width: 80%;
 }
 
-.brand-container img {
+/* .brand-container img {
   width: 250px;
   height: auto;
-}
+} */
+
+
+
+
 
 .brands h2 {
   font-weight: 600;
@@ -695,7 +721,8 @@ background-color: var(--back);
 }
 
 .about-about img{
-  width: 300px;
+  width: 30%;
+  height: auto;
 }
 
 @media only screen and (max-width: 813px){
@@ -707,7 +734,7 @@ background-color: var(--back);
     justify-content: center;
    
   color: var(--main);
-  background-color: var(--back);
+  /* background-color: var(--back); */
   }
   
   
@@ -728,4 +755,144 @@ background-color: var(--back);
   .about-about{
     align-items: center;
   }
+}
+
+
+.cards {
+  padding: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  color: var(--main);
+  flex-wrap: wrap;
+  background-color: var(--back);
+}
+
+.cards div{
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 30%;
+}
+
+.cards div img {
+  border-radius: 10px;
+  width: 80%;
+  height: 200px;
+}
+
+.cards div h4{
+  margin-top: 20px;
+}
+
+.cards div p {
+  width: 80%;
+}
+
+@media only screen and (max-width: 813px) {
+
+  .cards {
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main);
+    flex-wrap: wrap;
+    background-color: var(--back);
+  }
+  
+  .cards div{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  }
+  
+  .cards div img {
+    border-radius: 10px;
+    width: auto;
+  }
+  
+  .cards div h4{
+    margin-top: 20px;
+  }
+  
+  .cards div p {
+    width: 80%;
+    text-align: center;
+  }
+
+}
+
+
+
+.foot {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: var(--main);
+  background-color: var(--second);
+}
+
+.foot img{
+  width: 100px;
+  margin-left: 2em;
+}
+
+.foot .foot-column {
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot .foot-column h6 {
+  padding-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.foot .foot-column a {
+  text-decoration: none;
+color: var(--main);
+}
+
+
+@media only screen and (max-width: 813px){
+  .foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main);
+    background-color: var(--second);
+  }
+  
+  .foot img{
+    display: none;
+  }
+  
+  .foot .foot-column {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .foot .foot-column h6 {
+    /* padding: 1em 0 0.2em 0; */
+    font-weight: 600;
+  }
+  
+  .foot .foot-column a {
+    text-decoration: none;
+  color: var(--main);
+  }
+
+
 }
